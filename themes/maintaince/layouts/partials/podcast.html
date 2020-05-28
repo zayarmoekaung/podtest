@@ -1,0 +1,432 @@
+<style>
+	.upper{
+position: absolute;
+width: 300px;
+height: 206px;
+/*left: 0px;*/
+top: 0px;
+
+/* orange */
+
+background: #F57000;
+	}
+.pod{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 65.26%;	
+}
+.title{
+	position: absolute;
+width: 164px;
+height: 36px;
+left: 15px;
+top: 30px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 36px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+
+}	
+
+.toogle{
+	position: absolute;
+width: 35px;
+height: 35px;
+left: 15px;
+top: 73px;
+cursor: pointer;
+}
+
+.episode{
+  position: absolute;
+width: 231px;
+height: 56px;
+left: 54px;
+top: 76px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 28px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.ctime{
+  position: absolute;
+width: 21px;
+height: 21px;
+left: 20px;
+top: 150px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 21px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.dtime{
+  position: absolute;
+width: 25px;
+height: 21px;
+left: 150px;
+top: 150px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 21px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.progress{
+  position: absolute;
+width: 157px;
+height: 5px;
+left: 18px;
+top: 171px;
+
+background: #DDDDDD;
+border-radius: 7px;
+}
+
+.speaker{
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 196px;
+top: 163px;
+
+
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  position: absolute;
+width: 49px;
+height: 5px;
+left: 221px;
+top: 171px;
+
+background: #DDDDDD;
+border-radius: 7px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 5px;
+  height: 5px;
+  background: #f57000;
+  cursor: pointer;
+}
+
+.lower{
+  position: absolute;
+width: 300px;
+height: 600px;
+/*left: 0px;*/
+top: 206px;
+
+background: #FFFFFF;
+}
+
+.lowertitle{
+position: absolute;
+width: 130px;
+height: 36px;
+left: 15px;
+top: 241px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: flex-end;
+
+/* Text Black */
+
+color: #2E2E2E;
+}
+
+.submittext{
+  position: absolute;
+width: 270px;
+height: 56px;
+left: 15px;
+top: 282px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+
+/* Text Black */
+
+color: #2E2E2E;
+}
+.box{
+  position: absolute;
+width: 200px;
+height: 35px;
+left: 15px;
+top: 348px;
+
+background: #F2F2F2;
+border-radius: 6px;
+}
+.sbtn{
+ position: absolute;
+width: 74px;
+height: 35px;
+left: 218px;
+top: 348px;
+
+ background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+
+}
+
+.btntxt{
+  font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.form{
+  position: absolute;
+width: 160px;
+height: 24px;
+left: 29px;
+top: 354px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+
+/* text grey */
+
+color: #8E8E8E;
+}
+.fb{
+  position: absolute;
+left: 7%;
+right: 81.33%;
+top: 66.27%;
+bottom: 27.82%;
+}
+.email{
+  position: absolute;
+left: 26.67%;
+right: 61.67%;
+top: 66.27%;
+bottom: 27.82%;
+}
+.share{
+  position: absolute;
+width: 249.46px;
+height: 50px;
+left: 15px;
+top: 468px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+/* or 156% */
+
+display: flex;
+align-items: center;
+
+/* Text Black */
+
+color: #2E2E2E;
+}
+.sharebtn{
+  position: absolute;
+left: 5%;
+right: 65.67%;
+top: 89.04%;
+bottom: 5.06%;
+}
+
+.mini{
+  position: absolute;
+width: 360px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+background: #F57000;
+}
+</style>
+<div >
+  <div class="lower">
+	<div class="upper">
+	<label class="title">ဒီဂျစ်တယ် ရေဒီယို</label>
+	 <img src="/pbt.png" id="audioControl" onclick="togglePlaying()" class="toogle">
+   <label class="episode">Episode 001: အင်တာနက် အင်တာ နက်အင်တာနက်</label>
+      <audio id="audio" ontimeupdate="updateBar()"  >
+  <source src="https://otamyanmar.podbean.com/mf/play/fke692/y2matecom-CoffinDanceMemeAstronomiaViolinCover_xU3XmuwdAoUar5ma.mp3" type="audio/mpeg">
+  </audio>
+  <div>
+    <span style="color: #ffff" id="current-time" class="ctime"></span>
+  <span style="color: #ffff" id="duration" class="dtime"></span>
+  </div>
+  <canvas id="progress" width="200" height="5" class="progress"></canvas> 
+  <img src="/speaker.png" class="speaker">
+  <input type="range" min="1" max="100" value="50" class="slider" id="vol-control" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" > 
+</div>
+
+ <label class="lowertitle">အားပေးပါအုံး!</label>
+ <label class="submittext"> ဖောက်သည်အရင်းချာများ စာရင်းသွင်းရန် ….. Please Suscribe.</label> 
+ 
+    <input type="text" id="email" class="box" name="email"><br><br>
+  <button class="sbtn" type="submit" value="submit"><label class="btntxt">Submit</label></button>
+ <a href="https://web.facebook.com/digitalteahouse2020"><img src="/Logo_fb.png" class="fb"></a>
+ <a href=""><img src="/logo_email.png" class="email"></a>
+ <label class="share">ကြိုက်တယ်ဆို Share ပေးပါအုံး ဆိုင်အသစ်မို့ပါ !!!!!</label>
+<a href=""><img src="/Share Button.png" class="sharebtn"></a>
+</div>
+</div>
+
+<div class="mini">
+  
+</div>
+
+<script>
+
+window.SetVolume = function(val)
+{
+    var player = document.getElementById('audio');
+    console.log('Before: ' + player.volume);
+    player.volume = val / 100;
+    console.log('After: ' + player.volume);
+}
+
+
+var canvasWidth = 200
+var audioEl = document.getElementById("audio")
+var canvas = document.getElementById("progress").getContext('2d')
+var ctrl = document.getElementById('audioControl')
+var pp = "play"
+
+audioEl.addEventListener('loadedmetadata', function() {
+  var duration = audioEl.duration
+  var currentTime = audioEl.currentTime
+  document.getElementById("duration").innerHTML = convertElapsedTime(duration)
+  document.getElementById("current-time").innerHTML = convertElapsedTime(currentTime)
+  canvas.fillRect(0, 0, canvasWidth, 50);
+});
+
+function togglePlaying() {
+  
+  var play = pp === 'Play'
+  var method
+
+  if (play) {
+    alert("This is alert box!");
+    pp = 'Pause'
+    
+    method = 'play'
+  } else {
+    pp = 'Play'
+    
+    method = 'pause'
+  }
+
+  audioEl[method]()
+
+}
+
+function updateBar() {
+  canvas.clearRect(0, 0, canvasWidth, 50)
+  canvas.fillStyle = "#0000";
+  canvas.fillRect(0, 0, canvasWidth, 50)
+  
+  var currentTime = audioEl.currentTime
+  var duration = audioEl.duration
+  
+  if (currentTime === duration) {
+    ctrl.src = "/pbt.png"
+  }
+  
+  document.getElementById("current-time").innerHTML = convertElapsedTime(currentTime)
+  
+  var percentage = currentTime / duration
+  var progress = (canvasWidth * percentage)
+  canvas.fillStyle = "#f2f2f2"
+  canvas.fillRect(0, 0, progress, 50)
+}
+
+function convertElapsedTime(inputSeconds) {
+  var seconds = Math.floor(inputSeconds % 60)
+  if (seconds < 10) {
+    seconds = "0" + seconds
+  }
+  var minutes = Math.floor(inputSeconds / 60)
+  return minutes + ":" + seconds
+}
+</script>
+
+
