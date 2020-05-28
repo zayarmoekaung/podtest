@@ -29,9 +29,9 @@ font-style: normal;
 font-weight: bold;
 font-size: 21px;
 line-height: 36px;
+word-wrap: normal|break-word|initial|inherit;
 display: flex;
-align-items: flex-end;
-
+align-items: flex-start;
 color: #FFFFFF;
 
 }	
@@ -319,15 +319,69 @@ top: 0px;
 
 background: #F57000;
 }
+.minititle{
+  position: absolute;
+width: 121.5px;
+height: 19.04px;
+left: 10px;
+top: 0px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 17px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+.topodcast{
+  position: absolute;
+width: 68px;
+height: 21px;
+left: 276px;
+top: 0px;
+}
+.arrow{
+position: absolute;
+width: 5px;
+height: 11px;
+left: 339px;
+top: 16px;
+
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.text{
+  position: absolute;
+width: 57px;
+height: 21px;
+left: 276px;
+top: 0px;
+
+font-family: Pyidaungsu;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 21px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+/* f57000 */
+
+color: #FFFFFF;
+}
 </style>
 <div >
   <div class="lower">
 	<div class="upper">
 	<label class="title">ဒီဂျစ်တယ် ရေဒီယို</label>
 	 <img src="/pbt.png" id="audioControl" onclick="togglePlaying()" class="toogle">
-   <label class="episode">Episode 001: အင်တာနက် အင်တာ နက်အင်တာနက်</label>
+   <label class="episode">Black Clover OST : Against The Gods</label>
       <audio id="audio" ontimeupdate="updateBar()"  >
-  <source src="https://otamyanmar.podbean.com/mf/play/fke692/y2matecom-CoffinDanceMemeAstronomiaViolinCover_xU3XmuwdAoUar5ma.mp3" type="audio/mpeg">
+  <source src="https://otamyanmar.podbean.com/mf/play/n8f29q/11.mp3" type="audio/mpeg">
   </audio>
   <div>
     <span style="color: #ffff" id="current-time" class="ctime"></span>
@@ -350,9 +404,7 @@ background: #F57000;
 </div>
 </div>
 
-<div class="mini">
-  
-</div>
+
 
 <script>
 
@@ -385,7 +437,7 @@ function togglePlaying() {
   var method
 
   if (play) {
-    alert("This is alert box!");
+    
     pp = 'Pause'
     
     method = 'play'
